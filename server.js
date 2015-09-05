@@ -1,3 +1,5 @@
+'use strict';
+
 var config = require('./config.json');
 var express = require('express');
 var http = require('http');
@@ -23,7 +25,7 @@ app.use(express.methodOverride());
 // Include the controllers (routes)
 fs.readdirSync('./controllers').forEach(function (file) {
   if(file.substr(-3) == '.js') {
-      route = require('./controllers/' + file);
+      var route = require('./controllers/' + file);
       route.controller(app);
   }
 });
@@ -33,11 +35,6 @@ app.use(app.router);
 
 //  Default route
 app.get('/', function(req, res){
-  res.render('index', { title: 'Express' });
-});
-
-//  Default route
-app.get('/temp', function(req, res){
   res.render('index', { title: 'Express' });
 });
 

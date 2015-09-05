@@ -1,0 +1,32 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+
+.container {
+	text-align: center;
+	height: 100vh;
+	position: relative;
+}
+
+.content {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
+.content p {
+	font-size: 2.5em;
+	font-family: sans-serif;
+	color: #bbb;
+}
+
+img {
+	width: 150px;
+}
