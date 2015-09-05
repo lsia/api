@@ -4,4 +4,4 @@ doc/
 dvips/
 fonts/
 tex/
-
+.fuse_hidden*

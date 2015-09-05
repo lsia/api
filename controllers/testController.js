@@ -4,7 +4,7 @@ module.exports.controller = function(app) {
 
 	/*var passport = require('passport');*/
 	var config = require('../config.json');
-	var model = require(config.paths.models + 'testModel.js');
+	var model = require('../' + config.paths.models + '/testModel.js');
 
 	/*// Add passport initialization
 	app.use(passport.initialize()); 

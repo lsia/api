@@ -8,9 +8,12 @@
 		"pass": "postgres"
 	},
 	"express": {
-		"port": 3000
+		"ip": "127.0.0.1",
+		"port": 8080
 	},
 	"paths": {
-		"models": "../models/"
+		"controllers": "controllers",
+		"models": "models",
+		"static_files": "public"
 	}
 }
